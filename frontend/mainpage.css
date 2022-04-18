@@ -1,0 +1,32 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+.tabs > * {
+    color: white;
+}
+
+.animate {
+    animation-name: my-animation;
+    transition: all 0.4s cubic-bezier(0.15, 0.75, 0.45, 0.95) 0s;
+    animation: 10s ease 0s infinite alternate none running rainbow;
+}
+
+@keyframes rainbow {
+    0% {
+        color: rgb(255, 197, 77);
+    }
+    25% {
+        color: rgb(106, 237, 118);
+    }
+    50% {
+        color: rgb(0, 153, 255);
+    }
+    75% {
+        color: rgb(240, 77, 255);
+    }
+    100% {
+        color: rgb(255, 77, 77);
+    }
+}
